@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>What day of the week is today</title>
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript">
+            var fallback = ['Sunday', 'Monday', 'Thuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            var userLang = ((navigator.language) ? navigator.language : navigator.userLanguage).substring(0, 2);
+
+            jQuery(document).ajaxError(function(event, request, settings){
+                $("div").append(fallback[0] + ' (fallback)');
+            });
+
+            $(document).ready(function() {
+                $.getJSON('languages/' + userLang + '.json',
+                    function(data) {
+                         if(data != null) { 
+                            $("div").append(data.weekdays[0] + ' (' + userLang + ')');
+                        } else {
+                            $("div").append(fallback[0] + ' (fallback)');
+                        }
+                    }
+                );
+            });
+        </script>  
+    </head>
+
+    <body>
+        <div id="dotw"></div>
+    </body>
+</html>
+
