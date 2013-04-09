@@ -5,18 +5,19 @@
         <script type="text/javascript">
             var fallback = ['Sunday', 'Monday', 'Thuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
             var userLang = ((navigator.language) ? navigator.language : navigator.userLanguage).substring(0, 2);
+            var day = (new Date()).getDay();
 
             jQuery(document).ajaxError(function(event, request, settings){
-                $("div").append(fallback[0] + ' (fallback)');
+                $("div").append(fallback[day] + ' (fallback)');
             });
 
             $(document).ready(function() {
                 $.getJSON('languages/' + userLang + '.json',
                     function(data) {
                          if(data != null) { 
-                            $("div").append(data.weekdays[0] + ' (' + userLang + ')');
+                            $("div").append(data.weekdays[day] + ' (' + userLang + ')');
                         } else {
-                            $("div").append(fallback[0] + ' (fallback)');
+                            $("div").append(fallback[day] + ' (fallback)');
                         }
                     }
                 );
