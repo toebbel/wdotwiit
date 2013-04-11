@@ -1,0 +1,13 @@
+{ 
+    "weekdays": [
+        "e diel",
+        "e hënë",
+        "e martë",
+        "e mërkurë",
+        "e enjte",
+        "e premte",
+        "e shtunë",
+        ],
+    "name" : "Albanian",
+    "native-name" : "gjuha shqipe"
+}
