@@ -1,0 +1,13 @@
+{ 
+    "weekdays": [
+        "dimanĉo",
+        "lundo",
+        "mardo",
+        "merkredo",
+        "ĵaŭdo",
+        "vendredo",
+        "sabato"
+        ]
+    "name" : "Esperanto",
+    "native-name" : "Esperanto"
+}
