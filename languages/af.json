@@ -1,0 +1,12 @@
+{ 
+    "weekdays": [
+        "Sondag",
+        "Maandag", 
+        "Dinsdag",
+        "Woensdag",
+        "Donderdag",
+        "Vrydag",
+        "Saterdag"],
+    "name" : "Afrikaans",
+    "native-name" : "Afrikaans"
+}
