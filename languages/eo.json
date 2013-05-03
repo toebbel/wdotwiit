@@ -7,7 +7,9 @@
         "ĵaŭdo",
         "vendredo",
         "sabato"
-        ]
+        ],
     "name" : "Esperanto",
-    "native-name" : "Esperanto"
+    "native-name" : "Esperanto",
+    "or": "???",
+    "language-code":"eo"
 }

@@ -1,7 +1,7 @@
 { 
     "weekdays": ["Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"],
     "or": "ock",
-    "nativeName": "Svenska",
-    "englishName": "Swedish",
-    "languageCode": "se"
+    "native-name": "Svenska",
+    "name": "Swedish",
+    "language-code": "se"
 }

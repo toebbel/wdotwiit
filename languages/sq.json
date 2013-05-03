@@ -6,8 +6,10 @@
         "e mërkurë",
         "e enjte",
         "e premte",
-        "e shtunë",
-        ],
+        "e shtunë"
+    ],
     "name" : "Albanian",
-    "native-name" : "gjuha shqipe"
+    "native-name" : "gjuha shqipe",
+    "language-code":"sq",
+    "or": "???"
 }

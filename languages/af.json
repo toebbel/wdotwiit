@@ -8,5 +8,7 @@
         "Vrydag",
         "Saterdag"],
     "name" : "Afrikaans",
-    "native-name" : "Afrikaans"
+    "native-name" : "Afrikaans",
+    "language-code": "af",
+"or": "???"
 }
