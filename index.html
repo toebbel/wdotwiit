@@ -4,24 +4,51 @@
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script type="text/javascript">
             var fallback = ['Sunday', 'Monday', 'Thuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            var langFile = {'weekdays' : fallback};
             var userLang = ((navigator.language) ? navigator.language : navigator.userLanguage).substring(0, 2);
             var day = (new Date()).getDay();
+            var geoDay = day;
 
             jQuery(document).ajaxError(function(event, request, settings){
+                console.log("Ajax error");
                 $("div").append(fallback[day] + ' (fallback)');
             });
 
             $(document).ready(function() {
+                console.log("loading language file " + userLang);
                 $.getJSON('languages/' + userLang + '.json',
                     function(data) {
                          if(data != null) { 
-                            $("div").append(data.weekdays[day] + ' (' + userLang + ')');
+                            langFile = data;
+                            console.log("loaded language file: " + langFile);
                         } else {
-                            $("div").append(fallback[day] + ' (fallback)');
+                            console.log("language file is empty. Using fallback");
+                            userLang = userLang + 'unsupported';
                         }
+                        refresh();
                     }
-                );
-            });
+                    );
+
+                jQuery.getScript('http://www.geoplugin.net/javascript.gp', function() 
+                    {
+                        var lon = geoplugin_longitude();
+                        var lat = geoplugin_latitude();
+                        var USER = "demo";
+                        console.log("Your location is: " + lon + ", " + lat);
+                        $.getJSON("http://api.geonames.org/timezoneJSON?lat=" + lat + "&lng=" + lon + "&username=" + USER, 
+                            function(data) {
+                                if(data != null) {
+                                    console.log("received timezone data: " + data);
+                                } else {
+                                    console.log("timezone data is empty.");
+                                }
+                            });
+                    });
+                });
+
+            function refresh() {
+                $("div").append(langFile.weekdays[day]);
+            }
         </script>  
     </head>
 
