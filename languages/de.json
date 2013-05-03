@@ -7,5 +7,9 @@
         "Donnerstag",
         "Freitag", 
         "Samstag"
-    ]
+    ],
+    "or": "oder",
+    "nativeName": "Deutsch",
+    "englishName": "German",
+    "languageCode": "de"
 }
