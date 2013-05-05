@@ -55,7 +55,10 @@
                             function(data) {
                                 if(data != null && data != undefined) {
                                     console.log("received timezone data: " + data);
-                                    geoDay = (new Date(data.time)).getDay();
+				    geoDay = (new Date(data.time)).getDay();
+				    if (!isFinite(geoDay)) {
+					geoDay = day; //fallback
+				    }
                                     refresh();
                                 } else {
                                     console.log("timezone data is empty.");
