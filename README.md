@@ -6,4 +6,4 @@ I needed this website because I am a stupid student, who forgets about time and 
 
 The site uses the time of your computer as well as your IP-based location to determine the current day.
 
-If you miss a language, just create a pull-request ;)
+If you'd love to see more languages, create pull-requests :)
