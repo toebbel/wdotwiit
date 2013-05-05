@@ -15,12 +15,19 @@
             });
 
             $(document).ready(function() {
-                populateLangSelection();
-                refresh();
-                if($.cookie('lang') != undefined) {
-                    userLang = $.cookie('lang');
+                refresh(); //display any language
+                
+                if($.cookie("lang") != undefined) { //detect if there are user settings stored
+                    userLang = $.cookie("lang");
                     console.log("go ya' cookie :) you want " + userLang);
                 }
+
+                populateLangSelection(); //load available languages
+                loadLanguage(); //load desired language
+                detectGeoDay(); //check for time difference
+            });
+
+            function loadLanguage() {
                 console.log("loading language file " + userLang);
                 $.getJSON('languages/' + userLang + '.json',
                     function(data) {
@@ -34,7 +41,9 @@
                         refresh();
                     }
                     );
+            }
 
+            function detectGeoDay() {
                 jQuery.getScript('http://www.geoplugin.net/javascript.gp', function() 
                     {
                         var lon = geoplugin_longitude();
@@ -52,7 +61,7 @@
                                 }
                             });
                     });
-                });
+            }
 
             function refresh() {
                 var dsp = langFile.weekdays[day];
@@ -78,7 +87,10 @@
             }
 
             function updateLang() {
-                $.cookie("lang", $("userLang").val());
+                userLang = $("#langSelection").val();
+                console.log("You've selected " + userLang);
+                $.cookie("lang", userLang, { expires: 365, path: '/' , raw: true});
+                loadLanguage();
             }
         </script>  
     </head>
