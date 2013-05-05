@@ -87,9 +87,9 @@
                                     option = " selected ";
                                 else
                                     option = "";
-                                list.append('<option value="' + data[i].languageCode + '"' + option + '>' + data[i].nativeName + '/' + data[i].name + '</option>');
+                                list.append('<option value="' + data[i].languageCode + '"' + option + '>' + data[i].nativeName + ' / ' + data[i].name + '</option>');
                             }
-                            $("#langSelect").show(500);
+                            $("#langSelect").show();
                         }});
             }
 
