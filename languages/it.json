@@ -1,0 +1,15 @@
+{ 
+    "weekdays": [
+        "domenica",
+        "lunedì", 
+        "martedì",
+        "mercoledì",
+        "giovedì",
+        "venerdì",
+        "sabato"],
+    "name" : "Italian",
+    "nativeName" : "italiano",
+    "languageCode": "it",
+"or": "o",
+"today": "Oggi é"
+}
