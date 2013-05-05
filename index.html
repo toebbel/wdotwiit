@@ -2,19 +2,25 @@
     <head>
         <title>What day of the week is today</title>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+        <script src="jquery.cookie.js"></script>
         <script type="text/javascript">
             var fallback = ['Sunday', 'Monday', 'Thuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-            var langFile = {'weekdays' : fallback};
+            var langFile = {"weekdays": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "or": "or", "native-name": "English", "name": "English", "language-code": "en"};
             var userLang = ((navigator.language) ? navigator.language : navigator.userLanguage).substring(0, 2);
             var day = (new Date()).getDay();
             var geoDay = day;
 
             jQuery(document).ajaxError(function(event, request, settings){
-                console.log("Ajax error");
-                $("div").append(fallback[day] + ' (fallback)');
+                console.log("Ajax error for request " + request + ", event " + event);
             });
 
             $(document).ready(function() {
+                populateLangSelection();
+                refresh();
+                if($.cookie('lang') != undefined) {
+                    userLang = $.cookie('lang');
+                    console.log("go ya' cookie :) you want " + userLang);
+                }
                 console.log("loading language file " + userLang);
                 $.getJSON('languages/' + userLang + '.json',
                     function(data) {
@@ -33,12 +39,14 @@
                     {
                         var lon = geoplugin_longitude();
                         var lat = geoplugin_latitude();
-                        var USER = "demo";
+                        var USER = "toebbel";
                         console.log("Your location is: " + lon + ", " + lat);
                         $.getJSON("http://api.geonames.org/timezoneJSON?lat=" + lat + "&lng=" + lon + "&username=" + USER, 
                             function(data) {
-                                if(data != null) {
+                                if(data != null && data != undefined) {
                                     console.log("received timezone data: " + data);
+                                    geoDay = (new Date(data.time)).getDay();
+                                    refresh();
                                 } else {
                                     console.log("timezone data is empty.");
                                 }
@@ -47,13 +55,40 @@
                 });
 
             function refresh() {
-                $("div").append(langFile.weekdays[day]);
+                var dsp = langFile.weekdays[day];
+                if(geoDay != day)
+                    dsp += " " + langFile.or + " " + langFile.weekdays[geoDay];
+                $("#dotw").text(dsp);
+            }
+
+            function populateLangSelection() {
+                $.getJSON('languages/list.json', 
+                        function(data) {
+                        if(data == null) {
+                            console.log("could not load language list");
+                            $("#langSelection").hide();    
+                        } else {
+                            console.log("got language list");
+                            var list = $("#langSelection");
+                            for (var i = 0; i < data.length; i++) {
+                                list.append('<option value="' + data[i].languageCode + '">' + data[i].nativeName + '/' + data[i].name + '</option>');
+                            }
+                            $("#langSelect").show(500);
+                        }});
+            }
+
+            function updateLang() {
+                $.cookie("lang", $("userLang").val());
             }
         </script>  
     </head>
 
     <body>
         <div id="dotw"></div>
+        <div id="langSelect" style="display: none">
+            <select onchange="updateLang()" id="langSelection">
+            </select>
+        </div>
     </body>
 
     <!-- Piwik -->
