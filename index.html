@@ -1,6 +1,8 @@
 <html>
     <head>
         <title>What day of the week is today</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,800&subset=latin,cyrillic,greek,vietnamese' rel='stylesheet' type='text/css'>
+        <link href='style.css' rel='stylesheet' type='text/css'>
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="jquery.cookie.js"></script>
         <script type="text/javascript">
@@ -101,11 +103,14 @@
     </head>
 
     <body>
-        <div id="dotw"></div>
-        <div id="langSelect" style="display: none">
-            <select onchange="updateLang()" id="langSelection">
-            </select>
-        </div>
+    <div id="container">
+            <h1>Today is</h1>
+            <div id="dotw"></div>
+    </div>    
+    <div id="langSelect" style="display: none">
+       <select onchange="updateLang()" id="langSelection">
+       </select> | <a href="https://github.com/toebbel/wdotwiit/blob/master/README.md">wtf?</a>
+    </div>
     </body>
 
     <!-- Piwik -->
