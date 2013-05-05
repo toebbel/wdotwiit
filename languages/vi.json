@@ -1,0 +1,16 @@
+{
+    "weekdays": [
+        "Chủ Nhật",
+        "thứ hai",
+        "Thứ ba",
+        "Thứ tư",
+        "Thứ năm",
+        "Thứ sáu", 
+        "Thứ bảy"
+    ],
+    "or": "hoặc",
+    "nativeName": "Việt",
+    "name": "Vietnamese",
+    "languageCode": "vi",
+    "today": "Hôm nay là"
+}
