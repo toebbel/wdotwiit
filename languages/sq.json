@@ -9,7 +9,7 @@
         "e shtunë"
     ],
     "name" : "Albanian",
-    "native-name" : "gjuha shqipe",
-    "language-code":"sq",
+    "nativeName" : "gjuha shqipe",
+    "languageCode":"sq",
     "or": "???"
 }

@@ -9,7 +9,7 @@
         "Saturday"
     ],
     "or": "or",
-    "native-name": "English",
+    "nativeName": "English",
     "name": "English",
-    "language-code": "en"
+    "languageCode": "en"
 }

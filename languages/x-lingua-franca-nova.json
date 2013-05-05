@@ -1,7 +1,7 @@
 { 
     "weekdays": ["soldi", "lundi", "martedi", "mercurdi", "jovedi", "venerdi", "saturdi"],
     "or": "???",
-    "native-name": "Lingua Franca Nova",
+    "nativeName": "Lingua Franca Nova",
     "name": "Franca Nova",
-    "language-code": "???"
+    "languageCode": "???"
  }

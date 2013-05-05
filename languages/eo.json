@@ -9,7 +9,7 @@
         "sabato"
         ],
     "name" : "Esperanto",
-    "native-name" : "Esperanto",
+    "nativeName" : "Esperanto",
     "or": "???",
-    "language-code":"eo"
+    "languageCode":"eo"
 }

@@ -1,7 +1,7 @@
 { 
     "weekdays": ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"],
     "or": "og",
-    "native-name": "Dansk",
+    "nativeName": "Dansk",
     "name": "Danish",
-    "language-code": "da"
+    "languageCode": "da"
 }
