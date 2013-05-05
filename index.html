@@ -6,8 +6,7 @@
         <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
         <script src="jquery.cookie.js"></script>
         <script type="text/javascript">
-            var fallback = ['Sunday', 'Monday', 'Thuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-            var langFile = {"weekdays": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "or": "or", "native-name": "English", "name": "English", "language-code": "en"};
+            var langFile = {"weekdays": ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], "or": "or", "nativeName": "English", "name": "English", "languageCode": "en", "today": "Today is"};
             var userLang = ((navigator.language) ? navigator.language : navigator.userLanguage).substring(0, 2);
             var day = (new Date()).getDay();
             var geoDay = day;
@@ -70,6 +69,7 @@
                 if(geoDay != day)
                     dsp += " " + langFile.or + " " + langFile.weekdays[geoDay];
                 $("#dotw").text(dsp);
+                $("h1").text(langFile.today);
             }
 
             function populateLangSelection() {
