@@ -1,0 +1,16 @@
+{
+    "weekdays": [
+        "Hovjaj",
+        "maSjaj",
+        "quljaj",
+        "bIQjaj",
+        "Sorjaj",
+        "baSjaj", 
+        "lamjaj"
+    ],
+    "or": "ghap",
+    "nativeName": "tlhIngan",
+    "name": "Klingon",
+    "languageCode": "en",
+    "today": "Heghlu'meH"
+}
