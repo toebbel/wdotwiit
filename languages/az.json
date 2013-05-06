@@ -1,0 +1,16 @@
+{
+    "weekdays": [
+        "bazar",
+        "Bazar ertəsi",
+        "çərşənbə axşamı",
+        "çərşənbə",
+        "cümə axşamı",
+        "cümə", 
+        "şənbə"
+    ],
+    "or": "və ya",
+    "nativeName": "Azərbaycanca",
+    "name": "Azerbaijani",
+    "languageCode": "az",
+    "today": "Bu gün"
+}
