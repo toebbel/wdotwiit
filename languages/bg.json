@@ -9,7 +9,6 @@
         "събота"],
     "name" : "Bulgarian",
     "nativeName" : "български",
-    "languageCode": "bg",
-"or": "или",
-"today": "Днес е"
+    "or": "или",
+    "today": "Днес е"
 }

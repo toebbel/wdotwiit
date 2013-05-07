@@ -9,7 +9,6 @@
         "Saterdag"],
     "name" : "Afrikaans",
     "nativeName" : "Afrikaans",
-    "languageCode": "af",
-"or": "of",
-"today": "vandag is"
+    "or": "of",
+    "today": "vandag is"
 }

@@ -1,8 +1,14 @@
 { 
-    "weekdays": ["Söndag", "Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag"],
+    "weekdays": [
+        "Söndag",
+        "Måndag",
+        "Tisdag",
+        "Onsdag",
+        "Torsdag",
+        "Fredag",
+        "Lördag"],
     "or": "ock",
     "nativeName": "Svenska",
     "name": "Swedish",
-    "languageCode": "sv",
-"today": "idag är"
+    "today": "idag är"
 }

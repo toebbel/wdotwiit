@@ -1,8 +1,14 @@
 { 
-    "weekdays": ["soldi", "lundi", "martedi", "mercurdi", "jovedi", "venerdi", "saturdi"],
+    "weekdays": [
+        "soldi", 
+        "lundi", 
+        "martedi", 
+        "mercurdi", 
+        "jovedi", 
+        "venerdi", 
+        "saturdi"],
     "or": "o",
     "nativeName": "Lingua Franca Nova",
     "name": "Franca Nova",
-    "languageCode": "x-lingua-franca-nova",
-"today": "oji es"
+    "today": "oji es"
  }

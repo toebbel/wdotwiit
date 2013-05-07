@@ -1,8 +1,14 @@
 { 
-    "weekdays": ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"],
+    "weekdays": [
+        "Søndag",
+        "Mandag", 
+        "Tirsdag", 
+        "Onsdag", 
+        "Torsdag", 
+        "Fredag", 
+        "Lørdag"],
     "or": "og",
     "nativeName": "Dansk",
     "name": "Danish",
-    "languageCode": "da",
-"today": "I dager er"
+    "today": "I dager er"
 }

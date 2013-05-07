@@ -9,7 +9,6 @@
         "Суббота"],
     "name" : "Russian",
     "nativeName" : "русский",
-    "languageCode": "ru",
-"or": "или",
-"today": "Сегодня"
+    "or": "или",
+    "today": "Сегодня"
 }
