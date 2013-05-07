@@ -1,0 +1,16 @@
+{
+    "weekdays": [
+        "Domingo",
+        "Lunes",
+        "Martes",
+        "Miércoles",
+        "Jueves",
+        "Viernes", 
+        "Sábado"
+    ],
+    "or": "o",
+    "nativeName": "Español",
+    "name": "Spanish",
+    "languageCode": "es",
+	"today": "Hoy es"
+}

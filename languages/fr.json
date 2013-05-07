@@ -1,0 +1,16 @@
+{
+    "weekdays": [
+        "Dimanche",
+        "Lundi",
+        "Mardi",
+        "Mercredi",
+        "Jeudi",
+        "Vendredi", 
+        "Samedi"
+    ],
+    "or": "ou",
+    "nativeName": "Français",
+    "name": "French",
+    "languageCode": "fr",
+	"today": "Aujourd'hui c'est"
+}
