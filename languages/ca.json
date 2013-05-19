@@ -1,0 +1,9 @@
+{
+    "weekdays": [
+	    "Diumenge", "Dilluns", "Dimarts", "Dimecres", "Dijous", "Divendres", "Dissabte"
+	],
+    "or": "o",
+    "nativeName": "català",
+    "name": "Catalan",
+    "today": "Avui és"
+}
