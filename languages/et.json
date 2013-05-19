@@ -1,0 +1,9 @@
+{
+    "weekdays": [
+    	"Pühapäev", "esmaspäev", "teisipäev", "kolmapäev", "Neljapäev", "reede", "laupäev"
+	],
+    "or": "või",
+    "nativeName": "eesti",
+    "name": "Estonian",
+    "today": "täna"
+}
