@@ -1,0 +1,9 @@
+{
+    "weekdays": [
+	    "Vasárnap", "Hétfő", "Kedd", "Szerda", "Csütörtök", "Péntek", "Szombat"
+	],
+    "or": "vagy",
+    "nativeName": "magyar",
+    "name": "Hungarian",
+    "today": "ma"
+}
