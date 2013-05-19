@@ -1,0 +1,9 @@
+{
+    "weekdays": [
+	    "Zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag"
+	],
+    "or": "of",
+    "nativeName": "Netherlands",
+    "name": "Dutch",
+    "today": "vandaag"
+}
