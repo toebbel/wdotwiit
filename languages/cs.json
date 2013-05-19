@@ -1,0 +1,9 @@
+{
+    "weekdays": [
+	    "Neděle", "Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota"
+	],
+    "or": "nebo",
+    "nativeName": "čeština",
+    "name": "Czech",
+    "today": "dnes"
+}
