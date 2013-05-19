@@ -1,0 +1,9 @@
+{
+    "weekdays": [
+    	"Sunnuntai", "Maanantai", "tiistai", "keskiviikko", "torstai", "perjantai", "Lauantai"
+	],
+    "or": "tai",
+    "nativeName": "suomalainen",
+    "name": "Finnish",
+    "today": "tänään"
+}
