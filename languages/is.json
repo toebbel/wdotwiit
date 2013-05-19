@@ -1,0 +1,9 @@
+{
+    "weekdays": [
+    	"Sunnudagur", "mánudagur", "þriðjudagur", "miðvikudagur", "fimmtudagur", "föstudagur", "laugardagur"
+	],
+    "or": "eða",
+    "nativeName": "Icelandic",
+    "name": "Icelandic",
+    "today": "í dag"
+}
