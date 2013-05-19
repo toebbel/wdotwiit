@@ -1,0 +1,9 @@
+{
+    "weekdays": [
+    	"Domingo", "Luns", "Martes", "Mércores", "Xoves", "Venres", "Sábado"
+	],
+    "or": "ou",
+    "nativeName": "Galego",
+    "name": "Galician",
+    "today": "hoxe"
+}
