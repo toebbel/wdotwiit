@@ -1,0 +1,15 @@
+{
+    "weekdays": [
+        "Wochenende!",
+        "Kein Wochenende",
+        "Kein Wochenende",
+        "Kein Wochenende",
+        "Kein Wochenende",
+        "Fast Wochenende", 
+        "Wochenende!"
+    ],
+    "or": "oder",
+    "nativeName": "Wochenend-Deutsch",
+    "name": "Weekend-German",
+    "today": "Heute ist"
+}

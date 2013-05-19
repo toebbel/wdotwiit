@@ -1,0 +1,15 @@
+{
+    "weekdays": [
+        "Kalter-Mops-Tag",
+        "Spaghetti-Tag",
+        "Schnitzel-Tag",
+        "Pudding-Tag",
+        "Gulasch-Tag",
+        "Pizza-Tag", 
+        "Lasagne-Tag"
+    ],
+    "or": "oder",
+    "nativeName": "Essensplan",
+    "name": "Food-German",
+    "today": "Heute ist"
+}
