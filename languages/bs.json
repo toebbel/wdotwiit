@@ -1,0 +1,9 @@
+{
+    "weekdays": [
+	    "Nedjelja", "Ponedjeljak", "Utorak", "Srijeda", "Četvrtak", "Petak", "Subota"
+	],
+    "or": "ili",
+    "nativeName": "bosanski",
+    "name": "Bosnian",
+    "today": "danas"
+}
