@@ -1,0 +1,9 @@
+{
+    "weekdays": [
+    	"Linggo", "Lunes", "Martes", "Miyerkules", "Huwebes", "Biyernes", "Sabado"
+	],
+    "or": "o",
+    "nativeName": "Pilipino",
+    "name": "Filipino",
+    "today": "ngayon"
+}
