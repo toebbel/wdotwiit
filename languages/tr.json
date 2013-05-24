@@ -1,0 +1,16 @@
+{
+    "weekdays": [
+        "Pazar",
+        "Pazartesi",
+        "Salı",
+        "Çarşamba",
+        "Perşembe",
+        "Cuma", 
+        "Cumartesi"
+    ],
+    "or": "veya",
+    "nativeName": "Türkçe",
+    "name": "Turkish",
+    "languageCode": "tr",
+	"today": "Bugün"
+}
